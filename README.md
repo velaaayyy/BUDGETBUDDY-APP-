@@ -11,6 +11,7 @@ BudgetBuddy is a simple Flutter app that helps students manage allowance, record
 - Savings goal and amount-saved progress tracker
 - Student profile name settings
 - Philippine Peso formatting and responsive Material 3 layout
+- Custom BudgetBuddy app icon and in-app logo
 - Local persistence; no Firebase, SQL, or online account required
 
 The tracker starts with zero balances and no sample transactions. Add allowance entries to track your actual money, and edit an entry from Allowance History when you need to correct it.
@@ -48,6 +49,12 @@ To run the automated tests and static analysis:
 ```sh
 flutter test
 flutter analyze
+```
+
+To regenerate the Android and iOS app icons after changing the logo:
+
+```sh
+dart run flutter_launcher_icons
 ```
 
 ## Local data

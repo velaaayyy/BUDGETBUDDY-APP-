@@ -77,13 +77,14 @@ class ProfileScreen extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Row(
             children: [
-              const CircleAvatar(
-                radius: 30,
-                backgroundColor: Color(0xFFE8F5E9),
-                child: Icon(
-                  Icons.person_outline,
-                  size: 32,
-                  color: Color(0xFF2E7D32),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(14),
+                child: Image.asset(
+                  'assets/images/budgetbuddy_logo.png',
+                  width: 60,
+                  height: 60,
+                  fit: BoxFit.cover,
+                  semanticLabel: 'BudgetBuddy logo',
                 ),
               ),
               const SizedBox(width: 14),
